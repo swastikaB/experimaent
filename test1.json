@@ -17,7 +17,7 @@
   },
   "domains": [
     {
-      "id": "1800petmeds.www.1800petmeds.com.www.1800petmeds.com",
+      "id": "domain1",
       "patterns": [
         "www.1800petmeds.com"
       ],
