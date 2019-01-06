@@ -1,0 +1,44 @@
+{
+  "action": {
+    "origin": {
+      "request_headers_to_origin": [
+        {
+          "operation": "SET",
+          "name": "True-Client-IP",
+          "value": "$remote_addr"
+        },
+        {
+          "operation": "SET",
+          "name": "trustakam",
+          "value": "8ugt32d1sa8321ax09as"
+        }
+      ]
+    }
+  },
+  "domains": [
+    {
+      "id": "1800petmeds.www.1800petmeds.com.www.1800petmeds.com",
+      "patterns": [
+        "www.1800petmeds.com"
+      ],
+      "action": {
+	"edge": {
+          "ssl": {
+            "enable": true,
+            "sni_cert": {
+              "customer_name": "instartops",
+              "cert_name": "001"
+            },
+            "non_sni_certs": [
+              {
+                "customer_name": "instartops",
+                "cert_name": "001"
+              }
+            ],
+            "validate_ssl_cert_domains": false
+          }
+	}
+      }
+    }
+  ]
+}
