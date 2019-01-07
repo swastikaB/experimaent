@@ -1,0 +1,93 @@
+#test1
+{
+    "id": "test1",
+    "patterns": [
+        "test1.com"
+    ],
+    "action": {
+        "edge": {
+            "ssl": {
+                "enable": true,
+                "sni_cert": {
+                    "customer_name": "petsmart",
+                    "cert_name": "pets1"
+                },
+                "non_sni_certs": [
+                    {
+                    "customer_name": "instartops",
+                    "cert_name": "001"
+                    }
+                ],
+                "validate_ssl_cert_domains": false
+            }
+        }
+
+    }
+}
+
+test2
+
+{
+    "id": "test2",
+    "patterns": [
+        "test2.com",
+        "test22.com"
+    ],
+    "action": {
+        "edge": {
+            "ssl": {
+                "enable": true,
+                "sni_cert": {
+                    "customer_name": "petsmart",
+                    "cert_name": "pets1"
+                },
+                "non_sni_certs": [
+                    {
+                    "customer_name": "petsmart",
+                    "cert_name": "pets1"
+                    }
+                ]
+            }
+        }
+
+    }
+}
+
+test3
+
+{
+    "id": "test3",
+    "patterns": [
+        "test3.com"
+    ],
+    "action": {
+        "edge": {
+            "ssl": {
+                "enable": false
+            }
+        }
+
+    }
+}
+
+test4
+
+{
+    "id": "test4",
+    "patterns": [
+        "test4.com"
+    ],
+    "action": {
+        "edge": {
+            "ssl": {
+                "enable": true,
+                "sni_cert": {
+                    "customer_name": "petsmart",
+                    "cert_name": "pets1"
+                }
+            }
+        }
+
+    }
+}
+
