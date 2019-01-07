@@ -3,18 +3,18 @@
     "origin": {
       "request_headers_to_origin": [
         {
-          "operation": "SET", 
-          "name": "True-Client-IP", 
+          "operation": "SET",
+          "name": "True-Client-IP",
           "value": "$remote_addr"
-        }, 
+        },
         {
-          "operation": "SET", 
-          "name": "trustakam", 
+          "operation": "SET",
+          "name": "trustakam",
           "value": "8ugt32d1sa8321ax09as"
         }
       ]
     }
-  }, 
+  },
   "domains": [
     {
       "id": "test1",
@@ -39,24 +39,24 @@
           }
         }
       }
-    }, 
+    },
     {
       "id": "test2", 
       "patterns": [
-        "test2.com", 
+        "test2.com",
         "test22.com"
-      ], 
+      ],
       "action": {
         "edge": {
           "ssl": {
-            "enable": true, 
+            "enable": true,
             "sni_cert": {
-              "customer_name": "instartops", 
+              "customer_name": "instartops",
               "cert_name": "003"
-            }, 
+            },
             "non_sni_certs": [
               {
-                "customer_name": "instartops", 
+                "customer_name": "instartops",
                 "cert_name": "003"
               }
             ]
@@ -68,7 +68,7 @@
       "id": "test3", 
       "patterns": [
         "test3.com"
-      ], 
+      ],
       "action": {
         "edge": {
           "ssl": {
@@ -78,16 +78,16 @@
       }
     }, 
     {
-      "id": "test4", 
+      "id": "test4",
       "patterns": [
         "test4.com"
-      ], 
+      ],
       "action": {
         "edge": {
           "ssl": {
-            "enable": true, 
+            "enable": true,
             "sni_cert": {
-              "customer_name": "instartops", 
+              "customer_name": "instartops",
               "cert_name": "003"
             }
           }
