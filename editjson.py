@@ -11,6 +11,7 @@ fp = open('test1.json', 'r')
 #convert json file to python equivalent object. In this case a ordered dict
 file_content =  json.load(fp, object_pairs_hook=OrderedDict)
 #parse through file till the domains block is encountered
+
 for key, value in file_content.items():
     if key == "domains":
         #In JSON domains block is a list/array, so loop through the list
@@ -34,6 +35,7 @@ for key, value in file_content.items():
             #print("-----------------------------After modification--------------------------")
             #print(json.dumps(ssl_block, indent=2, sort_keys=False))
 #print(json.dumps(file_content, indent=2, sort_keys=False))
+
 fp.close()
 fw = open('test1.json', 'w')
 json.dump(file_content, fw, indent=2, sort_keys=False)

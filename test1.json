@@ -41,7 +41,7 @@
       }
     },
     {
-      "id": "test2", 
+      "id": "test2",
       "patterns": [
         "test2.com",
         "test22.com"
@@ -65,7 +65,7 @@
       }
     }, 
     {
-      "id": "test3", 
+      "id": "test3",
       "patterns": [
         "test3.com"
       ],
